@@ -2,7 +2,6 @@ Description:
     Authentication generator for applications generated with IceBreaker
 
 Example:
-    rails generate icy_auth
+    rails generate iceauth PROJECT_NAME
 
-    This will create:
-        what/will/it/create
+    This will create the artifacts for authentication in the application.
