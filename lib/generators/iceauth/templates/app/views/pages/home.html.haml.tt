@@ -1,0 +1,7 @@
+- if signed_in?
+  %section.round
+    %h1 Home
+    %p Home page for <%= name.camelcase %>
+- else
+  %section.round
+    = link_to "Sign Up Now!", signup_path, :class => "signup_button round"

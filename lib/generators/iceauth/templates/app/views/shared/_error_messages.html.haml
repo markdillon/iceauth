@@ -1,0 +1,10 @@
+- if object.errors.any?
+  #error_explanation
+    %h2
+      = pluralize(object.errors.count, "error")
+      prohibited this #{object.class} from being saved:
+      - # FIXME: Fix the display of the class name
+    %p There were problems with the following fields:
+    %ul
+    - object.errors.full_messages.each do |msg|
+      %li= msg

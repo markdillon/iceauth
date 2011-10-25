@@ -1,0 +1,3 @@
+%section.round
+  %h1 About
+  %p About page for <%= name.camelcase %>

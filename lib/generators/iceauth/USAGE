@@ -1,0 +1,8 @@
+Description:
+    Authentication generator for applications generated with IceBreaker
+
+Example:
+    rails generate icy_auth
+
+    This will create:
+        what/will/it/create

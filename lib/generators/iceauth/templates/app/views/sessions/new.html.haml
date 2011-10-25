@@ -1,0 +1,23 @@
+%section.round
+  %h1 Sign In
+
+  = form_for(:session, :url => sessions_path) do |f|
+    .field
+      = f.label :login, "Email or Username"
+      %br
+      = f.text_field :login
+      %br
+    .field
+      = f.label :password
+      %br
+      = f.password_field :password
+    .field
+      = f.label :remember_me
+      = f.check_box :remember_me, :checked => true
+    %br
+    .actions
+      = f.submit "Sign In", :class => 'awesome'
+    %br
+  %p
+    New user?
+    = link_to "Sign Up Now!", signup_path

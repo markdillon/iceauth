@@ -1,0 +1,3 @@
+%section.round
+  %h1 Help
+  %p Help page for <%= name.camelcase %>

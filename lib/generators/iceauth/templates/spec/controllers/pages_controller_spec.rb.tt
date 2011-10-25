@@ -1,0 +1,68 @@
+require 'spec_helper'
+
+describe PagesController do
+  render_views
+  
+  before(:each) do
+    @base_title = "<%= name.camelcase %>"
+  end
+
+  describe "#home", "(GET)" do
+
+    before(:each) do
+      get :home
+    end
+
+    it "is successful" do
+      response.should be_success
+    end
+
+    it "has the correct title" do
+      page.has_content?("#{@base_title} | Home")
+    end
+
+  end
+  
+  describe "#contact", "(GET)" do
+    before(:each) do
+      get :contact
+    end
+    
+    it "is successful" do
+      response.should be_success
+    end
+    
+    it "has the correct title" do
+      page.has_content?("#{@base_title} | Contact")
+    end
+  end
+
+  describe "#about", "(GET)" do
+    before(:each) do
+      get :about
+    end
+    
+    it "is successful" do
+      response.should be_success
+    end
+    
+    it "has the correct title" do
+      page.has_content?("#{@base_title} | About")
+    end
+  end
+
+  describe "#help", "(GET)" do
+    before(:each) do
+      get :help
+    end
+    
+    it "is successful" do
+      response.should be_success
+    end
+    
+    it "has the correct title" do
+      page.has_content?("#{@base_title} | Help")
+    end
+  end
+
+end

@@ -1,0 +1,7 @@
+%section.round
+  %h1 Sign Up
+
+  = form_for(@user) do |f|
+    = render 'users/fields', :f => f
+    .actions
+      = f.submit "Sign Up", :class => 'awesome'

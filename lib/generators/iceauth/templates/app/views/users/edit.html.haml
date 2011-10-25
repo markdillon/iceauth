@@ -1,0 +1,7 @@
+%section.main.round
+  %h1 Profile Settings
+
+  = form_for(@user) do |f|
+    = render 'fields', :f => f
+    .actions
+      = f.submit "Update", :class => 'awesome'
