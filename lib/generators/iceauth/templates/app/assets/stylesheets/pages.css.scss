@@ -6,20 +6,26 @@
 }
 
 body {
-  background: #EDEFED;
+  background: #666666;
 }
 
 header {
-  background: lightgray;
-  padding: 10px 0 10px 0;
+  background: #FFFFFF;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid black;
 }
 
 header img {
   padding: 1em;
 }
 
+.main {
+  background: #EDEFED;
+  padding: 1px 0 1px 0;
+}
+
 section {
-  margin-top: 1em;
+  margin: 1em 0 1em 0;
   font-size: 120%;
   padding: 20px;
   background: #fff;
@@ -91,12 +97,18 @@ nav ul li a:hover {
 /* Footer */
 
 footer {
-  background: lightgray;
+  background: #666666;
   text-align: center;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0 10px 0;
+  border-top: 1px solid black;
+}
+
+footer a {
+  font-family: verdana,arial,sans-serif;
+  font-size: .9em;
+  color: #E7E7E7;
 }
 
 footer nav {
